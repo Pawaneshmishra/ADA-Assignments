@@ -13,7 +13,7 @@ def Fibonacci(n):
 
     print(Start,sep='\n') #Prints Each Term
 
-    Sum=Start+Next #Update to next values 
+    Sum=Start+Next #Update to next values.
     Start=Next
     Next=Sum
 
