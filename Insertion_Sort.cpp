@@ -7,16 +7,18 @@ void Recursive_insertion(int*, int);
 
 int main()
 {
-    int A[]={12,13,24,29,20};
-    int n = sizeof(A)/sizeof(A[0]);
+    int n;
+    cout<<"Enter the number of inputs to get : ";
+    cin>>n;
+    int A[n];
 
+    cout<<"Enter the elements to sort : ";
+    for(int i=0; i<n; i++) cin>>A[i];
+    //getting elements to sort
     Recursive_insertion(A, n);
 
-    for(int i=0; i<n; i++)
-    {
-        cout<<A[i]<<endl;
-    }
-    //printing results 
+    for(int i=0; i<n; i++) cout<<A[i]<<endl;
+    //printing results
 }
 
 
